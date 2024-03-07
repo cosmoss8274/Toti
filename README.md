@@ -4,7 +4,7 @@ This repository contains a collection of NGS analysis pipelines for various sequ
 
 ## Usage
 
-Each brief description for sections within each bash script. Replace `<path_to_data>` and other placeholder values with actual paths specific to your dataset and environment.
+Contain brief description for each sections within bash scripts. Replace `<path_to_data>` and other placeholder values with actual paths specific to your dataset and environment.
 
 ## Reference
 
