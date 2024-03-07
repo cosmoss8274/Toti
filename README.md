@@ -1,6 +1,6 @@
 # Data Pipelines for Toti
 
-This repository contains a collection of NGS analysis pipelines for various sequencing techniques including ATAC-seq, Bisulfite sequencing (BS-seq), CUT&RUN, CUT&Tag, ChIP-seq, RNA-seq, and single-cell RNA-seq (scRNA-seq) with different protocols (10x Genomics, Drop-seq, Smart-seq) for Toti()
+This repository contains a collection of NGS analysis pipelines for various sequencing techniques including ATAC-seq, Bisulfite sequencing (BS-seq), CUT&RUN, CUT&Tag, ChIP-seq, RNA-seq, and single-cell RNA-seq (scRNA-seq) with different protocols (10x Genomics, Drop-seq, Smart-seq) for Toti (https://toti.zju.edu.cn/).
 
 ## Usage
 
