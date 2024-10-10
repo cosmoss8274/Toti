@@ -6,7 +6,7 @@ mkdir -p ${BAM_DIR}
 cat ${ACC_LIST_FILE} | while read SAMPLE_ID
 do
     # i.e. for single-end data
-    trim_galore -q 25 ${FASTQ_DIR}/${SAMPLE_ID}.fastq.gz --gzip -o ${TRIMMED_DIR} --cores 20 --fastqc
+    trim_galore -q 20 ${FASTQ_DIR}/${SAMPLE_ID}.fastq.gz --gzip -o ${TRIMMED_DIR} --cores 20 --fastqc
 
 # Alignment
     bwa mem -t 20 -M ${GENOME_FA} ${TRIMMED_DIR}/${SAMPLE_ID}_trimmed.fq.gz |
