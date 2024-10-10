@@ -7,7 +7,7 @@ done
 # Step 2: Align reads with Bowtie2 and process with Samtools
 cd $path_to_clean_data
 cat sample_ids.txt | while read id; do
-    bowtie2 --threads 16 -X 2000 --very-sensitive -x $path_to_reference/$genome_index -1 ${id}_1_val_1.fq.gz -2 ${id}_2_val_2.fq.gz | \
+    bowtie2 --threads 16 --no-discordant -X 2000 --very-sensitive -x $path_to_reference/$genome_index -1 ${id}_1_val_1.fq.gz -2 ${id}_2_val_2.fq.gz | \
     samtools view -bS - > ${id}.bam
     samtools sort -o $path_to_bam/${id}.sorted.bam ${id}.bam
     cd $path_to_bam
